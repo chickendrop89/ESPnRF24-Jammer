@@ -44,6 +44,9 @@ and your pin configuration in `include/options.h`
 3. If using a different board, port it into `platformio.ini`
 4. Upload the code, and the SPIFFS filesystem image via platform tasks
 
+## WebUI
+<img width="1080" height="512" alt="WebUI" src="https://github.com/user-attachments/assets/8e401b94-a49b-4b02-bb4f-1be372aa586a" />
+
 # Credits
 This code is my refactor of https://github.com/W0rthlessS0ul/nRF24_jammer with extra features
 
