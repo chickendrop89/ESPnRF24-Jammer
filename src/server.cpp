@@ -154,7 +154,7 @@ void handleFileReqOrRedirect() {
             return;
         }
     }
-    server.sendHeader("Location", ENTRY_PAGE);
+    server.sendHeader("Location", "/" + String(ENTRY_PAGE));
     server.send(302);
     return;
 }
@@ -306,7 +306,7 @@ void setupWebServer() {
      * Main pages
     */
     server.on("/", []() {
-        server.sendHeader("Location", ENTRY_PAGE);
+        server.sendHeader("Location", "/" + String(ENTRY_PAGE));
         server.send(302);
     });
     server.on("/wifi_select", []() {
