@@ -2,12 +2,11 @@
 #include "terminal.h"
 #include <RF24.h>
 
-// Reference to the existing radio object from your main/radio files
 extern RF24 radio;
-// Terminal state variables 
+
 static uint8_t rxAddress[5] = {0xAA, 0x01, 0x02, 0x03, 0x04};
 static uint8_t currentChannel = 75;
-static uint8_t powerLevel = RF24_PA_MIN;  // store as enum value
+static uint8_t powerLevel = RF24_PA_MIN;
 static bool isJamming = false;
 static bool isListening = false;
 static uint8_t jamMode = 2;  // 1=carrier, 2=packets
