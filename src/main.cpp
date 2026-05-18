@@ -17,7 +17,7 @@
 #include <SPIFFS.h>
 #include <Preferences.h>
 #include <DNSServer.h>
-
+#include "terminal.h"
 #include "src/main.h"
 #include "src/jammer.h"
 #include "src/server.h"
@@ -151,7 +151,8 @@ void setup() {
         halt_esp();
     }
     Serial.println("SPIFFS mounted successfully.");
-
+    Serial.println("Trying to initialise terminal");
+    terminalInit();
     loadPreferences();
     Serial.println("Non-volatile settings loaded.");
 
@@ -205,6 +206,7 @@ void setup() {
 }
 
 void loop() {
+    terminalUpdate();
     #if defined(CAPTIVE_PORTAL)
     dnsServer.processNextRequest();
     #endif

@@ -60,8 +60,8 @@
  * 
  * This will set the board to only 8,5 dBm.
 */
-#define DEFAULT_SSID ""
-#define DEFAULT_PASSWORD ""
+#define DEFAULT_SSID "ESP32"
+#define DEFAULT_PASSWORD "esp32dev"
 #define DEFAULT_CHANNEL 13
 #define HIDDEN_SSID false
 
