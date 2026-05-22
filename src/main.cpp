@@ -17,7 +17,7 @@
 #include <SPIFFS.h>
 #include <Preferences.h>
 #include <DNSServer.h>
-#include "terminal.h"
+#include "src/terminal.h"
 #include "src/main.h"
 #include "src/jammer.h"
 #include "src/server.h"
