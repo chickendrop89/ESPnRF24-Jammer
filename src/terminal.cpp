@@ -1,5 +1,5 @@
 // terminal.cpp
-#include "terminal.h"
+#include "src/terminal.h"
 #include <RF24.h>
 
 extern RF24 radio;
